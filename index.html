@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title> Meu primeiro site</title>
-    </head>
-    <body>
-        <h1 style="text-align: center">Negao gosta de estrupar ruivas</h1>
-        <p style="text-align: center">procura morto 1000$</p>
-        <img src="figura.jpeg" alt="estou estrupando">
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dbl</title>
 
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+        }
+
+        p{
+            color: white;
+            text-align: center;
+        }
+        
+
+    h1{
+    text-align: center;
+    background: linear-gradient(90deg, white, purple, white, purple, white, purple);
+    background-size: 300%;
+
+    background-clip: text;          
+    -webkit-background-clip: text;   
+
+    color: transparent;             
+    -webkit-text-fill-color: transparent; 
+    
+
+    animation: gradiente 15s infinite linear;
+    }
+
+
+        @keyframes gradiente {
+            0% { background-position: 0%; }
+            100% { background-position: 300%; }
+        }
+
+        .gif-canto{
+            position: fixed;
+            top: 10px;
+            left: 370px;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>lls.blg</h1>
+
+    <p>
+        Um pouco sobre mim: Envolvido com tecnologia desde cedo, Atualmente cursando 
+        <strong>Bacharelado em Ciências da Computação na UNESP Bauru.</strong> <br>
+        Pretendo postar alguns projetos próprios periodicamente.
+    </p>
+
+    <img src="legend-of-zelda-link.gif" class="gif-canto">
+
+</body>
+</html>
