@@ -2,60 +2,75 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dbl</title>
 
     <style>
         body{
             background-color: black;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         p{
             color: white;
             text-align: center;
+            padding: 0 20px;
         }
-        
 
-    h1{
-    text-align: center;
-    background: linear-gradient(90deg, white, purple, white, purple, white, purple);
-    background-size: 300%;
-
-    background-clip: text;          
-    -webkit-background-clip: text;   
-
-    color: transparent;             
-    -webkit-text-fill-color: transparent; 
-    
-
-    animation: gradiente 15s infinite linear;
-    }
-
+        h1{
+            text-align: center;
+            background: linear-gradient(90deg, white, purple, white, purple, white, purple);
+            background-size: 300%;
+            background-clip: text;          
+            -webkit-background-clip: text;   
+            color: transparent;             
+            -webkit-text-fill-color: transparent; 
+            animation: gradiente 15s infinite linear;
+        }
 
         @keyframes gradiente {
             0% { background-position: 0%; }
             100% { background-position: 300%; }
         }
 
+        ul{
+            color: white;
+            padding: 0 20px;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
         .gif-canto{
             position: fixed;
-          
-            
-        }
-        .zelda{
-              top: 10px;
-            left: 370px;
             width: 120px;
+            max-width: 30vw;
+            height: auto;
         }
+
+        .zelda{
+            top: 10px;
+            left: 300px;
+        }
+
         .corinthians{
-            top:190px;
-            left:115px;
-            width: 200px;
+            top: 300px;
+            left: 190px;
+        }
+
+        @media (max-width: 600px) {
+            .gif-canto{
+                width: 80px;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <h1>lls.blg</h1>
 
     <p>
@@ -64,13 +79,18 @@
         Pretendo postar alguns projetos próprios periodicamente.
     </p>
 
-    <p style="text-align: left;"> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Declarando solenemente que não participo de qualquer transmorfose<br> quântica de ideias ou hologramas filosóficos invisíveis. E nem fabrico<br> armas ativamente.
-    <br> <strong>"Vai Corinthians."- Craque neto</strong></p>
+    <p style="text-align: left; padding: 0 20px;">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        Declarando solenemente que não participo de qualquer transmorfose<br>
+        quântica de ideias ou hologramas filosóficos invisíveis. E nem fabrico<br>
+        armas ativamente.
+        <br><strong>"Vai Corinthians." - Craque Neto</strong>
+    </p>
 
-    <ul style="color: white; text-align: left;">
+    <ul>
         <li>Venezuela</li>
         <li>Libertadores 2012</li>
-        <li>Invasão e exploração da Groelandia</li>
+        <li>Invasão e exploração da Groenlandia</li>
         <li>Caminhão rebaixado</li>
         <li>Rony Rustico rei da américa</li>
         <li>Porque faculdades utilizam papel em provas de <strong>algoritmos</strong>?</li>
@@ -79,6 +99,5 @@
     <img src="legend-of-zelda-link.gif" class="gif-canto zelda">
     <img src="corinthians-escudo.gif" class="gif-canto corinthians">
 
-
 </body>
-</html> 
+</html>
